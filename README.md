@@ -19,6 +19,7 @@ source ~/.bashrc
 ../configure --prefix=$pwd/riscv_toolchain/riscv_gnu --enable-multilib
 make -j$(nproc)
 cd ../..
+sudo apt-get install -y device-tree-compiler
 git clone https://github.com/riscv-software-src/riscv-isa-sim.git
 cd riscv-isa-sim
 mkdir build && cd build
