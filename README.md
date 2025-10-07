@@ -15,7 +15,7 @@ mkdir riscv_gnu
 git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git
 cd riscv-gnu-toolchain
 mkdir build && cd build
-echo 'export PATH="$HOME/riscv_toolchain/riscv_gnu/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$pwd/riscv_toolchain/riscv_gnu/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ../configure --prefix=$pwd/riscv_toolchain/riscv_gnu --enable-multilib
 make -j$(nproc)
